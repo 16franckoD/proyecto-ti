@@ -1,0 +1,56 @@
+body {
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 6% 94% 6%;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+        "nav"
+        "content"
+        "foot";
+}
+
+.content {
+    padding: 0.5em;
+    border: black 1px solid;
+    grid-area: content;
+    display: grid;
+    gap: 0.5em;
+    grid-template-columns: 0.5fr 2fr 1fr 0.5fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: 
+        ". serv port ."
+        ". serv cont ."
+        ". serv blog ."
+
+    
+}
+
+.navbar {
+    border: black 1px solid;
+    grid-area: nav;
+}
+
+.services {
+    border: black 1px solid;
+    grid-area: serv;
+}
+
+.portafolio {
+    border: black 1px solid;
+    grid-area: port;
+}
+
+.blog {
+    border: black 1px solid;
+    grid-area: blog;
+}
+
+.contact {
+    border: black 1px solid;
+    grid-area: cont;
+}
+
+.footer {
+    border: black 1px solid;
+    grid-area: foot;
+}
